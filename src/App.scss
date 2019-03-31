@@ -1,0 +1,35 @@
+:root {
+  --background--color1: #222;
+  --background--color2: red;
+}
+
+$header-height: 50px;
+
+html,
+body,
+#root,
+.App {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background-color: #cfcfd4;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+header {
+  display: flex;
+  background-color: var(--background--color1);
+}
+
+h1 {
+  margin: 0;
+  padding: 0 0.5rem;
+  line-height: $header-height;
+  color: orange;
+  cursor: pointer;
+}
+
+.mapContainer {
+  height: calc(100% - #{$header-height});
+}
